@@ -1,6 +1,7 @@
 package UI;
 
 import Core.dao.JDBCArticleDao;
+import Core.dao.JDBCCredentialDao;
 import Core.vo.Article;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -32,6 +33,11 @@ public class Main extends Application {
         jdbcArticleDao.insert(article);
         System.out.println(jdbcArticleDao.select());
         jdbcArticleDao.closeConnection();
+
+        JDBCCredentialDao jdbcCredentialDao = new JDBCCredentialDao();
+        jdbcCredentialDao.getConnection();
+        System.out.println(jdbcCredentialDao.select());
+        jdbcCredentialDao.closeConnection();
 
         launch(args);
     }
