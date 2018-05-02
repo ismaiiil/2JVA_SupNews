@@ -1,14 +1,13 @@
-package sample;
+package UI;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Controller {
-    public void login_btn_pressed(ActionEvent Event)throws Exception{
+public class LoginController {
+    public void login_btn_pressed(ActionEvent Event){
         try{
             FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
             Parent root1 = (Parent) fxmlloader.load();
