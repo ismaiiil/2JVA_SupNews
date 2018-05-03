@@ -10,6 +10,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 public class LoginController {
 
     @FXML TextField username_textfield;
@@ -23,7 +26,9 @@ public class LoginController {
 
         Credential credential = new Credential();
         credential.setUsername(username_textfield.getText());
-        credential.setPassword(password_textfield.getText());
+        credential.setPassword(stringToMD5Hash(password_textfield.getText()));
+
+
 
         for (Credential cred:
              jdbcCredentialDao.select()) {
@@ -53,6 +58,34 @@ public class LoginController {
 
 
         jdbcCredentialDao.closeConnection();
+
+    }
+
+    public String stringToMD5Hash(String password){
+        String passwordToHash = password;
+        String generatedPassword = null;
+        try {
+
+            MessageDigest md = MessageDigest.getInstance("MD5");
+
+            md.update(passwordToHash.getBytes());
+
+            byte[] bytes = md.digest();
+
+            StringBuilder sb = new StringBuilder();
+            for(int i=0; i< bytes.length ;i++)
+            {
+                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+            }
+            //Get complete hashed password in hex format
+            generatedPassword = sb.toString();
+        }
+        catch (NoSuchAlgorithmException e)
+        {
+            e.printStackTrace();
+        }
+        System.out.println(generatedPassword);
+        return generatedPassword;
 
     }
 }
