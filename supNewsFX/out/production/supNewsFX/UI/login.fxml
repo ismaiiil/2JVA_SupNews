@@ -43,8 +43,8 @@
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
-            <TextField GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="username_textfield" GridPane.columnIndex="1" />
+            <TextField fx:id="password_textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>

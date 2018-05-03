@@ -34,10 +34,7 @@ public class Main extends Application {
         System.out.println(jdbcArticleDao.select());
         jdbcArticleDao.closeConnection();
 
-        JDBCCredentialDao jdbcCredentialDao = new JDBCCredentialDao();
-        jdbcCredentialDao.getConnection();
-        System.out.println(jdbcCredentialDao.select());
-        jdbcCredentialDao.closeConnection();
+
 
         launch(args);
     }
