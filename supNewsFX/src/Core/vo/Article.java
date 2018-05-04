@@ -10,17 +10,14 @@ public class Article {
     String content;
     byte[] image;
 
-    public InputStream getImage() {
-        InputStream is = new ByteArrayInputStream(image);
-        return is;
+    public byte[] getImage() {
+        return image;
     }
 
     public void setImage(byte[] image) {
         this.image = image;
     }
-
-
-
+    
     public int getId() {
         return id;
     }

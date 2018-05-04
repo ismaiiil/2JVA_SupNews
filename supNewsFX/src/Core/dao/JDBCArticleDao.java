@@ -37,7 +37,7 @@ public class JDBCArticleDao implements ArticleDao {
             );
             preparedStatement.setString(1,article.getTitle());
             preparedStatement.setString(2, article.getContent());
-            preparedStatement.setBlob(3,article.getImage());
+            preparedStatement.setBytes(3,article.getImage());
 
             preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -61,6 +61,7 @@ public class JDBCArticleDao implements ArticleDao {
                 article.setId(Integer.parseInt(resultSet.getString("id")));
                 article.setTitle(resultSet.getString("title"));
                 article.setContent(resultSet.getString("content"));
+                article.setImage(resultSet.getBytes("image"));
                 articles.add(article);
             }
             resultSet.close();
@@ -74,11 +75,12 @@ public class JDBCArticleDao implements ArticleDao {
     @Override
     public void update(Article article){
         try {
-        PreparedStatement ps = connection.prepareStatement("UPDATE Supnews.articles SET title=?,content=? WHERE id=?");
+        PreparedStatement ps = connection.prepareStatement("UPDATE Supnews.articles SET title=?,content=?,image=? WHERE id=?");
 
         ps.setString(1,article.getTitle());
         ps.setString(2,article.getContent());
-        ps.setInt(3,article.getId());
+        ps.setBytes(3,article.getImage());
+        ps.setInt(4,article.getId());
         int rowsAffected = ps.executeUpdate();
         ps.close();
         System.out.println(rowsAffected + " Rows affected.");

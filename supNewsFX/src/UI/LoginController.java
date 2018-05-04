@@ -42,6 +42,7 @@ public class LoginController {
                     Stage stage = new Stage();
                     stage.setTitle("dashboard");
                     stage.setScene(new Scene(root1));
+                    stage.setResizable(false);
                     stage.show();
 
                 }

@@ -10,7 +10,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class DashboardController {
@@ -19,8 +26,27 @@ public class DashboardController {
     @FXML TextField title_box;
     @FXML TextArea content_box;
 
+    byte[] imagebyte_box; //u cant see dis one hey hey
+
+
     public void initialize(){
         updateListView();
+    }
+    public void add_image_btn_click(ActionEvent Event) throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("image", "*.png","*.bmp","*jpeg","*jpg"));
+        File selectedFile = fileChooser.showOpenDialog(null);
+
+        if (selectedFile != null) {
+            Path path = Paths.get(selectedFile.getPath());
+            imagebyte_box = Files.readAllBytes(path);
+            System.out.println(imagebyte_box);
+        }
+        else {
+            System.out.println("File selection cancelled.");
+        }
+
+
     }
 
     public void preview_btn_click(ActionEvent Event){
@@ -28,6 +54,7 @@ public class DashboardController {
             Article article = new Article();
             article.setTitle(title_box.getText());
             article.setContent(content_box.getText());
+            article.setImage(imagebyte_box);
             FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("preview.fxml"));
             Parent root1 = (Parent) fxmlloader.load();
             PreviewController previewController = fxmlloader.getController();
@@ -35,6 +62,7 @@ public class DashboardController {
             Stage stage = new Stage();
             stage.setTitle("preview");
             stage.setScene(new Scene(root1));
+            stage.setResizable(false);
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
@@ -44,7 +72,6 @@ public class DashboardController {
 
     }
 
-
     public void save_btn_pressed(ActionEvent Event){
         String str =(String) listOfArticles.getSelectionModel().getSelectedItem();
         System.out.println(str);
@@ -52,14 +79,14 @@ public class DashboardController {
             Article article = new Article();
             article.setContent(content_box.getText());
             article.setTitle(title_box.getText());
+            article.setImage(imagebyte_box);
 
             JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
             jdbcArticleDao.getConnection();
             jdbcArticleDao.insert(article);
             jdbcArticleDao.closeConnection();
             updateListView();
-            content_box.clear();
-            title_box.clear();
+
         }else{
             JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
             jdbcArticleDao.getConnection();
@@ -73,11 +100,10 @@ public class DashboardController {
             }
             article1.setTitle(title_box.getText());
             article1.setContent(content_box.getText());
+            article1.setImage(imagebyte_box);
             jdbcArticleDao.update(article1);
             jdbcArticleDao.closeConnection();
             updateListView();
-            content_box.clear();
-            title_box.clear();
 
         }
 
@@ -93,6 +119,7 @@ public class DashboardController {
             if(artc.getTitle().equals(str)){
                 title_box.setText(artc.getTitle());
                 content_box.setText(artc.getContent());
+                imagebyte_box = artc.getImage();
                 break;
             }
 
@@ -109,6 +136,10 @@ public class DashboardController {
             listOfArticles.getItems().add(artic.getTitle());
         }
         jdbcArticleDao.closeConnection();
+        content_box.clear();
+        title_box.clear();
+        System.out.println(imagebyte_box);
+        imagebyte_box = new byte[0];
     }
 
 }

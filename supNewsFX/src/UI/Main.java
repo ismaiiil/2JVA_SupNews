@@ -22,35 +22,36 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 150));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
-    public static byte[] extractBytes (String ImageName) throws IOException {
-          Path path = Paths.get(ImageName);
-          byte[] data = Files.readAllBytes(path);
-          return data;
-    }
-
+//    public static byte[] extractBytes (String ImageName) throws IOException {
+//          Path path = Paths.get(ImageName);
+//          byte[] data = Files.readAllBytes(path);
+//          return data;
+//    }
+//
 
     public static void main(String[] args) {
 
 
-        Article article = new Article();
-        article.setTitle("Test image");
-        article.setContent("i like turtles");
-        try{
-            article.setImage(extractBytes("C:\\Users\\361SRRH\\Desktop\\Pinball\\1LIN snip.PNG"));
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-
-
-        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
-        jdbcArticleDao.getConnection();
-        jdbcArticleDao.insert(article);
-        System.out.println(jdbcArticleDao.select());
-        jdbcArticleDao.closeConnection();
+//        Article article = new Article();
+//        article.setTitle("new test image");
+//        article.setContent("i like turtles");
+//        try{
+//            article.setImage(extractBytes("C:\\Users\\USER\\Pictures\\tomami\\acl1.PNG"));
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
+//
+//
+//        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
+//        jdbcArticleDao.getConnection();
+//        jdbcArticleDao.insert(article);
+//        System.out.println(jdbcArticleDao.select());
+//        jdbcArticleDao.closeConnection();
         launch(args);
     }
 

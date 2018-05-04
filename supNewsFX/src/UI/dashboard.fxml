@@ -112,7 +112,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button mnemonicParsing="false" text="Add Image">
+                        <Button fx:id="add_img_butn" mnemonicParsing="false" onAction="#add_image_btn_click" text="Add Image">
                            <GridPane.margin>
                               <Insets left="10.0" />
                            </GridPane.margin>
