@@ -2,6 +2,7 @@ package Core.dao;
 
 
 import Core.vo.Article;
+import com.mysql.cj.x.protobuf.MysqlxCrud;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -67,6 +68,24 @@ public class JDBCArticleDao implements ArticleDao {
             e.printStackTrace();
         }
         return articles;
+    }
+
+    @Override
+    public void update(Article article){
+        try {
+        PreparedStatement ps = connection.prepareStatement("UPDATE Supnews.articles SET title=?,content=? WHERE id=?");
+
+        ps.setString(1,article.getTitle());
+        ps.setString(2,article.getContent());
+        ps.setInt(3,article.getId());
+        int rowsAffected = ps.executeUpdate();
+        ps.close();
+        System.out.println(rowsAffected + " Rows affected.");
+        System.out.println("User with id " + article.getId());
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 
     public void closeConnection(){

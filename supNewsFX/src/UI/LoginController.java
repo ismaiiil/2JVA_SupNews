@@ -23,7 +23,7 @@ public class LoginController {
 
         JDBCCredentialDao jdbcCredentialDao = new JDBCCredentialDao();
         jdbcCredentialDao.getConnection();
-        //System.out.println(jdbcCredentialDao.select());
+
 
         Credential credential = new Credential();
         credential.setUsername(username_textfield.getText());
@@ -61,6 +61,7 @@ public class LoginController {
         jdbcCredentialDao.closeConnection();
 
     }
+
 
     public String stringToMD5Hash(String password){
         String passwordToHash = password;

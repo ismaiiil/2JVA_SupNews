@@ -12,7 +12,7 @@ public class JDBCCredentialDao implements CredentialDao{
     Connection connection = null;
 
     public Connection getConnection() {
-        try{
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             if(connection == null){

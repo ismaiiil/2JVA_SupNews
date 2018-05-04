@@ -24,18 +24,15 @@ public class Main extends Application {
     public static void main(String[] args) {
 
 
-        Article article = new Article();
-        article.setTitle("Turtle");
-        article.setContent("i like turtles");
-
-        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
-        jdbcArticleDao.getConnection();
-        jdbcArticleDao.insert(article);
-        System.out.println(jdbcArticleDao.select());
-        jdbcArticleDao.closeConnection();
-
-
-
+//        Article article = new Article();
+//        article.setTitle("Turtle");
+//        article.setContent("i like turtles");
+//
+//        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
+//        jdbcArticleDao.getConnection();
+//        jdbcArticleDao.insert(article);
+//        System.out.println(jdbcArticleDao.select());
+//        jdbcArticleDao.closeConnection();
         launch(args);
     }
 

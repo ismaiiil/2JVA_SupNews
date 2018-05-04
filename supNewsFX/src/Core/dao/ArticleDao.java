@@ -6,5 +6,7 @@ public interface ArticleDao {
 
     public void insert(Article article);
 
+    public void update(Article article);
+
     public List<Article> select();
 }
