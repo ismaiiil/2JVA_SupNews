@@ -4,9 +4,13 @@ import Core.dao.JDBCArticleDao;
 import Core.vo.Article;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 
 public class DashboardController {
@@ -17,6 +21,27 @@ public class DashboardController {
 
     public void initialize(){
         updateListView();
+    }
+
+    public void preview_btn_click(ActionEvent Event){
+        try {
+            Article article = new Article();
+            article.setTitle(title_box.getText());
+            article.setContent(content_box.getText());
+            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("preview.fxml"));
+            Parent root1 = (Parent) fxmlloader.load();
+            PreviewController previewController = fxmlloader.getController();
+            previewController.initData(article);
+            Stage stage = new Stage();
+            stage.setTitle("preview");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+
     }
 
 

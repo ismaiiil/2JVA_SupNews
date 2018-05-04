@@ -118,7 +118,7 @@
                            </GridPane.margin>
                         </Button>
                         <Button fx:id="save_button" mnemonicParsing="false" onAction="#save_btn_pressed" text="Save" GridPane.columnIndex="2" />
-                        <Button mnemonicParsing="false" text="Preview" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#preview_btn_click" text="Preview" GridPane.columnIndex="1" />
                      </children>
                   </GridPane>
                   <TextArea fx:id="content_box" prefHeight="38.0" prefWidth="393.0" GridPane.rowIndex="2">

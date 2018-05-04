@@ -1,10 +1,25 @@
 package Core.vo;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
 public class Article {
 
     int id;
     String title;
     String content;
+    byte[] image;
+
+    public InputStream getImage() {
+        InputStream is = new ByteArrayInputStream(image);
+        return is;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
+
+
 
     public int getId() {
         return id;

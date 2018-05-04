@@ -38,6 +38,7 @@ public class LoginController {
                 try{
                     FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
                     Parent root1 = (Parent) fxmlloader.load();
+                    
                     Stage stage = new Stage();
                     stage.setTitle("dashboard");
                     stage.setScene(new Scene(root1));

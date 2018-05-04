@@ -8,6 +8,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class Main extends Application {
@@ -20,19 +25,32 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    public static byte[] extractBytes (String ImageName) throws IOException {
+          Path path = Paths.get(ImageName);
+          byte[] data = Files.readAllBytes(path);
+          return data;
+    }
+
 
     public static void main(String[] args) {
 
 
-//        Article article = new Article();
-//        article.setTitle("Turtle");
-//        article.setContent("i like turtles");
-//
-//        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
-//        jdbcArticleDao.getConnection();
-//        jdbcArticleDao.insert(article);
-//        System.out.println(jdbcArticleDao.select());
-//        jdbcArticleDao.closeConnection();
+        Article article = new Article();
+        article.setTitle("Test image");
+        article.setContent("i like turtles");
+        try{
+            article.setImage(extractBytes("C:\\Users\\361SRRH\\Desktop\\Pinball\\1LIN snip.PNG"));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
+        jdbcArticleDao.getConnection();
+        jdbcArticleDao.insert(article);
+        System.out.println(jdbcArticleDao.select());
+        jdbcArticleDao.closeConnection();
         launch(args);
     }
 

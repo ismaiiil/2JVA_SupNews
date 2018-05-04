@@ -33,10 +33,11 @@ public class JDBCArticleDao implements ArticleDao {
     public void insert(Article article){
         try{
             PreparedStatement preparedStatement = connection.prepareStatement(
-                    "INSERT INTO SupNews.articles (id, title, content) VALUES (NULL, ?, ?)"
+                    "INSERT INTO SupNews.articles (id, title, content,image) VALUES (NULL, ?, ?,?)"
             );
             preparedStatement.setString(1,article.getTitle());
             preparedStatement.setString(2, article.getContent());
+            preparedStatement.setBlob(3,article.getImage());
 
             preparedStatement.executeUpdate();
             preparedStatement.close();
