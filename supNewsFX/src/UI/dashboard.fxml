@@ -47,7 +47,7 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </Label>
-                  <Button mnemonicParsing="false" text="Delete" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                  <Button fx:id="delete" mnemonicParsing="false" onAction="#delete_btn_click" text="Delete" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets right="10.0" top="10.0" />
                      </GridPane.margin>

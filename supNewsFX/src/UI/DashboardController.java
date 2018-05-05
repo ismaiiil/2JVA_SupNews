@@ -49,6 +49,25 @@ public class DashboardController {
 
     }
 
+    public  void delete_btn_click(ActionEvent Event){
+        String str =(String) listOfArticles.getSelectionModel().getSelectedItem();
+        System.out.println(str);
+        JDBCArticleDao jdbcArticleDao = new JDBCArticleDao();
+        jdbcArticleDao.getConnection();
+        if(str != null){
+            for (Article delart:jdbcArticleDao.select()) {
+                if(delart.getTitle().equals(str)){
+                    jdbcArticleDao.delete(delart.getId());
+                    updateListView();
+                    break;
+                }
+
+            }
+        }
+
+
+    }
+
     public void preview_btn_click(ActionEvent Event){
         try {
             Article article = new Article();

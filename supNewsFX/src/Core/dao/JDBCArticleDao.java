@@ -91,6 +91,21 @@ public class JDBCArticleDao implements ArticleDao {
         }
     }
 
+    @Override
+    public void delete(int id) {
+        try {
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM supnews.articles WHERE id=?");
+            ps.setInt(1,id);
+            ps.executeUpdate();
+            ps.close();
+            System.out.println("User with id: " + id + " was sucesfully deleted from DB.");
+
+        }catch (SQLException e){
+            e.printStackTrace();
+
+        }
+    }
+
     public void closeConnection(){
         try{
             if(connection != null){

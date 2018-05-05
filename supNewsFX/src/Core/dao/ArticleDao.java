@@ -8,5 +8,7 @@ public interface ArticleDao {
 
     public void update(Article article);
 
+    public void delete(int id);
+
     public List<Article> select();
 }
