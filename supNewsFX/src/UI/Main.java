@@ -20,7 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("login");
         primaryStage.setScene(new Scene(root, 300, 150));
         primaryStage.setResizable(false);
         primaryStage.show();
@@ -68,3 +68,6 @@ public class Main extends Application {
 //interface ArticleDao (package dao)
     //insert, update, select, delete
 //class Article (package vo)
+
+
+

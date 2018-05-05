@@ -39,7 +39,7 @@ public class JDBCCredentialDao implements CredentialDao{
 
             while(resultSet.next()){
                 credential = new Credential();
-                credential.setId(Integer.parseInt(resultSet.getString("id")));
+                credential.setId(Integer.parseInt(resultSet.getString("user_id")));
                 credential.setUsername(resultSet.getString("username"));
                 credential.setPassword(resultSet.getString("password"));
                 credentials.add(credential);

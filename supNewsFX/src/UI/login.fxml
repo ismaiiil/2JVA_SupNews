@@ -46,6 +46,10 @@
             </Label>
             <TextField fx:id="username_textfield" GridPane.columnIndex="1" />
             <PasswordField fx:id="password_textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="wrong_pass" prefHeight="17.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
          </children>
       </GridPane>
    </children>

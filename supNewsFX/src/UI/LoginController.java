@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -18,6 +19,8 @@ public class LoginController {
 
     @FXML TextField username_textfield;
     @FXML PasswordField password_textfield;
+    @FXML Label wrong_pass;
+
 
     public void login_btn_pressed(ActionEvent Event){
 
@@ -31,14 +34,15 @@ public class LoginController {
 
 
 
-        for (Credential cred:
-             jdbcCredentialDao.select()) {
+        for (Credential cred : jdbcCredentialDao.select()) {
             if(cred.getUsername().equals(credential.getUsername()) && cred.getPassword().equals(credential.getPassword())){
                System.out.println("Right username password combo");
                 try{
                     FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
                     Parent root1 = (Parent) fxmlloader.load();
-                    
+                    DashboardController dashboardController = fxmlloader.getController();
+                    dashboardController.init_u_id(cred.getId());
+                    dashboardController.initialize();
                     Stage stage = new Stage();
                     stage.setTitle("dashboard");
                     stage.setScene(new Scene(root1));
@@ -53,7 +57,7 @@ public class LoginController {
                 stage.close();
                 break;
             }else{
-                System.out.println("Wrong username or password combo");
+                wrong_pass.setText("Wrong username or password");
             }
 
 

@@ -33,11 +33,12 @@ public class JDBCArticleDao implements ArticleDao {
     public void insert(Article article){
         try{
             PreparedStatement preparedStatement = connection.prepareStatement(
-                    "INSERT INTO SupNews.articles (id, title, content,image) VALUES (NULL, ?, ?,?)"
+                    "INSERT INTO SupNews.articles (id, title, content,image,user_id) VALUES (NULL, ?, ?,?,?)"
             );
             preparedStatement.setString(1,article.getTitle());
             preparedStatement.setString(2, article.getContent());
             preparedStatement.setBytes(3,article.getImage());
+            preparedStatement.setInt(4,article.getUser_id());
 
             preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -59,6 +60,7 @@ public class JDBCArticleDao implements ArticleDao {
             while(resultSet.next()){
                 article = new Article();
                 article.setId(Integer.parseInt(resultSet.getString("id")));
+                article.setUser_id(Integer.parseInt(resultSet.getString("user_id")));
                 article.setTitle(resultSet.getString("title"));
                 article.setContent(resultSet.getString("content"));
                 article.setImage(resultSet.getBytes("image"));
@@ -75,16 +77,17 @@ public class JDBCArticleDao implements ArticleDao {
     @Override
     public void update(Article article){
         try {
-        PreparedStatement ps = connection.prepareStatement("UPDATE Supnews.articles SET title=?,content=?,image=? WHERE id=?");
+        PreparedStatement ps = connection.prepareStatement("UPDATE Supnews.articles SET title=?,content=?,image=?,user_id=? WHERE id=?");
 
         ps.setString(1,article.getTitle());
         ps.setString(2,article.getContent());
         ps.setBytes(3,article.getImage());
-        ps.setInt(4,article.getId());
+        ps.setInt(4,article.getUser_id());
+        ps.setInt(5,article.getId());
         int rowsAffected = ps.executeUpdate();
         ps.close();
         System.out.println(rowsAffected + " Rows affected.");
-        System.out.println("User with id " + article.getId());
+        System.out.println("article with id " + article.getId());
         }
         catch (SQLException e){
             e.printStackTrace();
@@ -98,7 +101,7 @@ public class JDBCArticleDao implements ArticleDao {
             ps.setInt(1,id);
             ps.executeUpdate();
             ps.close();
-            System.out.println("User with id: " + id + " was sucesfully deleted from DB.");
+            System.out.println("article with id: " + id + " was sucesfully deleted from DB.");
 
         }catch (SQLException e){
             e.printStackTrace();
@@ -117,3 +120,6 @@ public class JDBCArticleDao implements ArticleDao {
     }
 }
 
+
+
+//establish foreign key for credential and aritcle, user_id, id

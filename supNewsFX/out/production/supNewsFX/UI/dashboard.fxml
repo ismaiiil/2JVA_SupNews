@@ -57,6 +57,11 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </ListView>
+                  <Button fx:id="chg_usr_btn" mnemonicParsing="false" onAction="#chg_usr_btn_click" text="Change User" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
                </children>
                <GridPane.margin>
                   <Insets />
