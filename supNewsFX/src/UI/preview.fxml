@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
 
 <GridPane gridLinesVisible="true" prefHeight="475.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.PreviewController">
   <columnConstraints>
@@ -24,7 +25,7 @@
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin></TextField>
-      <TextArea fx:id="preview_content" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <TextArea fx:id="preview_content" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
       <ImageView fx:id="image_box" fitHeight="189.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
       <Label text="Title" GridPane.valignment="TOP">
          <GridPane.margin>
@@ -33,5 +34,6 @@
          <font>
             <Font name="System Bold" size="17.0" />
          </font></Label>
+      <TextFlow fx:id="textflow_box" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
    </children>
 </GridPane>

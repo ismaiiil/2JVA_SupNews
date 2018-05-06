@@ -58,7 +58,7 @@ public class DashboardController {
         jdbcArticleDao.getConnection();
         if(str != null){
             for (Article delart:jdbcArticleDao.select()) {
-                if(delart.getTitle().equals(str)){
+                if(delart.getTitle().equals(str) && delart.getUser_id() == u_id){
                     jdbcArticleDao.delete(delart.getId());
                     updateListView();
                     break;
@@ -135,7 +135,6 @@ public class DashboardController {
         else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("You can't leave the title empty");
-            //alert.getDialogPane().setExpandableContent(new ScrollPane(new TextArea("aas")));
             alert.showAndWait();
         }
 

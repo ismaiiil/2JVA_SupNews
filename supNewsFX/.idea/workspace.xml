@@ -105,21 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DashboardController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/DashboardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2329">
-              <caret line="155" column="13" lean-forward="true" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+            <state relative-caret-position="127">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#759#760#0" expanded="true" />
@@ -131,75 +121,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/login.fxml">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UI/PreviewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="959">
+              <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+              <folding>
+                <element signature="e#1279#1285#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preview.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/preview.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            <state relative-caret-position="456">
+              <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
           </provider>
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/vo/Article.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Credential.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/vo/Credential.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="dashboard.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/dashboard.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="341">
               <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
               <folding />
             </state>
           </provider>
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
-              <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articles" pinned="false" current-in-tab="true">
-        <entry file="das://table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.articles">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credentials" pinned="false" current-in-tab="false">
-        <entry file="das://table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.credentials">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDBCArticleDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/dao/JDBCArticleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1525513454479" expanded="true" signature="878:965" ph="INSERT INTO SupNews.articles... " />
-                <marker date="1525513454479" expanded="true" signature="1650:1680" ph="SELECT * FRO... articles" />
-                <marker date="1525513454479" expanded="true" signature="2508:2582" ph="UPDATE Supnews.articles... " />
-                <marker date="1525513454479" expanded="true" signature="3213:3252" ph="DELETE FROM supnews.articles... " />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -242,17 +237,17 @@
         <option value="$PROJECT_DIR$/src/Core/Main.java" />
         <option value="$PROJECT_DIR$/src/Core/vo/Credential.java" />
         <option value="$PROJECT_DIR$/src/Core/dao/CredentialDao.java" />
-        <option value="$PROJECT_DIR$/src/UI/PreviewController.java" />
-        <option value="$PROJECT_DIR$/src/UI/preview.fxml" />
         <option value="$PROJECT_DIR$/src/Core/dao/ArticleDao.java" />
         <option value="$PROJECT_DIR$/src/Core/dao/JDBCCredentialDao.java" />
-        <option value="$PROJECT_DIR$/src/Core/vo/Article.java" />
         <option value="$PROJECT_DIR$/src/Core/dao/JDBCArticleDao.java" />
         <option value="$PROJECT_DIR$/src/UI/dashboard.fxml" />
-        <option value="$PROJECT_DIR$/src/UI/DashboardController.java" />
-        <option value="$PROJECT_DIR$/src/UI/LoginController.java" />
         <option value="$PROJECT_DIR$/src/UI/login.fxml" />
         <option value="$PROJECT_DIR$/src/UI/Main.java" />
+        <option value="$PROJECT_DIR$/src/Core/vo/Article.java" />
+        <option value="$PROJECT_DIR$/src/UI/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/UI/DashboardController.java" />
+        <option value="$PROJECT_DIR$/src/UI/preview.fxml" />
+        <option value="$PROJECT_DIR$/src/UI/PreviewController.java" />
       </list>
     </option>
   </component>
@@ -364,6 +359,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -535,12 +531,12 @@
       <workItem from="1525422359389" duration="1911000" />
       <workItem from="1525426331966" duration="9002000" />
       <workItem from="1525450590368" duration="8352000" />
-      <workItem from="1525459567474" duration="17828000" />
+      <workItem from="1525459567474" duration="47701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81189000" />
+    <option name="totallyTimeSpent" value="111062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -555,14 +551,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33898306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26040062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21482602" sideWeight="0.5081585" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3184569" sideWeight="0.4918415" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18986385" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20045386" sideWeight="0.4918415" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -629,7 +625,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -638,41 +634,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Core/dao/JDBCArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1525513454479" expanded="true" signature="878:965" ph="INSERT INTO SupNews.articles... " />
-            <marker date="1525513454479" expanded="true" signature="1650:1680" ph="SELECT * FRO... articles" />
-            <marker date="1525513454479" expanded="true" signature="2508:2582" ph="UPDATE Supnews.articles... " />
-            <marker date="1525513454479" expanded="true" signature="3213:3252" ph="DELETE FROM supnews.articles... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/vo/Credential.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#131#132#0" expanded="false" />
-            <element signature="e#162#163#0" expanded="false" />
-            <element signature="e#210#211#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-            <element signature="e#276#277#0" expanded="false" />
-            <element signature="e#301#302#0" expanded="false" />
-            <element signature="e#334#335#0" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#428#429#0" expanded="false" />
-            <element signature="e#476#477#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/vo/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -824,27 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/vo/Credential.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#131#132#0" expanded="false" />
-            <element signature="e#162#163#0" expanded="false" />
-            <element signature="e#210#211#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-            <element signature="e#276#277#0" expanded="false" />
-            <element signature="e#301#302#0" expanded="false" />
-            <element signature="e#334#335#0" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#428#429#0" expanded="false" />
-            <element signature="e#476#477#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/dao/CredentialDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -866,84 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/PreviewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/preview.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/vo/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/dao/ArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/dao/JDBCCredentialDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="78" lean-forward="false" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-          <folding>
-            <marker date="1525511875232" expanded="true" signature="933:966" ph="SELECT * FRO... credentials" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/dao/JDBCArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1525513454479" expanded="true" signature="878:965" ph="INSERT INTO SupNews.articles... " />
-            <marker date="1525513454479" expanded="true" signature="1650:1680" ph="SELECT * FRO... articles" />
-            <marker date="1525513454479" expanded="true" signature="2508:2582" ph="UPDATE Supnews.articles... " />
-            <marker date="1525513454479" expanded="true" signature="3213:3252" ph="DELETE FROM supnews.articles... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/dashboard.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/login.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -955,23 +817,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="das://table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.credentials">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -980,10 +825,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/dao/JDBCArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="100" column="11" lean-forward="false" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1525513454479" expanded="true" signature="878:965" ph="INSERT INTO SupNews.articles... " />
+            <marker date="1525513454479" expanded="true" signature="1650:1680" ph="SELECT * FRO... articles" />
+            <marker date="1525513454479" expanded="true" signature="2508:2582" ph="UPDATE Supnews.articles... " />
+            <marker date="1525513454479" expanded="true" signature="3213:3252" ph="DELETE FROM supnews.articles... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/dao/JDBCCredentialDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="79" />
+          <folding>
+            <marker date="1525511875232" expanded="true" signature="933:966" ph="SELECT * FRO... credentials" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="1073" column="22" lean-forward="false" selection-start-line="1073" selection-start-column="22" selection-end-line="1073" selection-end-column="22" />
+          <folding>
+            <element signature="e#46057#46058#0" expanded="false" />
+            <element signature="e#46099#46100#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/dashboard.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/DashboardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="155" column="13" lean-forward="true" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+        <state relative-caret-position="127">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#759#760#0" expanded="true" />
@@ -994,10 +893,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.articles">
+    <entry file="das://src:table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.articles">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.credentials">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5bc3d58/6b850c78-7678-4b1d-a750-d2ce9a23a026/supnews.articles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="SHA1(SHA1(226))" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/vo/Credential.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/vo/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/preview.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/PreviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="959">
+          <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+          <folding>
+            <element signature="e#1279#1285#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

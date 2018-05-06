@@ -6,6 +6,11 @@ import java.io.InputStream;
 public class Article {
 
     int id;
+    int user_id;
+    String title;
+    String content;
+    byte[] image;
+
 
     public int getUser_id() {
         return user_id;
@@ -15,10 +20,6 @@ public class Article {
         this.user_id = user_id;
     }
 
-    int user_id;
-    String title;
-    String content;
-    byte[] image;
 
     public byte[] getImage() {
         return image;
