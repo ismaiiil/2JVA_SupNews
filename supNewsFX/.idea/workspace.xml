@@ -133,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreviewController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PreviewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/PreviewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
-              <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+            <state relative-caret-position="262">
+              <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="48" />
               <folding>
                 <element signature="e#1279#1285#0" expanded="true" />
               </folding>
@@ -145,11 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="preview.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UI/preview.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="507">
+              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -246,8 +246,8 @@
         <option value="$PROJECT_DIR$/src/Core/vo/Article.java" />
         <option value="$PROJECT_DIR$/src/UI/LoginController.java" />
         <option value="$PROJECT_DIR$/src/UI/DashboardController.java" />
-        <option value="$PROJECT_DIR$/src/UI/preview.fxml" />
         <option value="$PROJECT_DIR$/src/UI/PreviewController.java" />
+        <option value="$PROJECT_DIR$/src/UI/preview.fxml" />
       </list>
     </option>
   </component>
@@ -531,12 +531,12 @@
       <workItem from="1525422359389" duration="1911000" />
       <workItem from="1525426331966" duration="9002000" />
       <workItem from="1525450590368" duration="8352000" />
-      <workItem from="1525459567474" duration="47701000" />
+      <workItem from="1525459567474" duration="51012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111062000" />
+    <option name="totallyTimeSpent" value="114373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -940,17 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/preview.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
@@ -963,12 +952,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/PreviewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+        <state relative-caret-position="262">
+          <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="48" />
           <folding>
             <element signature="e#1279#1285#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/preview.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
